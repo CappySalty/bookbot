@@ -1,11 +1,10 @@
+with open("books/frankenstein.txt") as f:
+    file_contents = f.read()  
+        
+
 def main():
-    with open("books/frankenstein.txt") as f:
-        global file_contents
-        file_contents = f.read()
-    
 
     def wordcount(book_contents : list) -> None:
-        global contents
         contents = book_contents.split()
         print("--- Begin report of books/frankenstein.txt ---")
         print(f"{len(contents)} words found in the document.\n\n")
